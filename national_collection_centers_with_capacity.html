@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_33e47032a07a1a1dba998d640efd97e6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_33e47032a07a1a1dba998d640efd97e6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_33e47032a07a1a1dba998d640efd97e6 = L.map(
+                "map_33e47032a07a1a1dba998d640efd97e6",
+                {
+                    center: [13.75, 100.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d15294f213270cd532bcdf293069548d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d15294f213270cd532bcdf293069548d.addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_227415b67d31b0f3721616105356cbf9 = L.marker(
+                [13.717516608116165, 100.46234337854995],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_993bf5087de696c2e956a342d3d1c397 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c47e16f2b5aa61217dd6587c62f28df3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6324c560ca11625355e256a4f60adc8a = $(`<div id="html_6324c560ca11625355e256a4f60adc8a" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 8878.6 tons<br>     DS: กรุงเทพมหานคร<br>     CC-DS Dist: 6.91 km     </div>`)[0];
+                popup_c47e16f2b5aa61217dd6587c62f28df3.setContent(html_6324c560ca11625355e256a4f60adc8a);
+            
+        
+
+        marker_227415b67d31b0f3721616105356cbf9.bindPopup(popup_c47e16f2b5aa61217dd6587c62f28df3)
+        ;
+
+        
+    
+    
+                marker_227415b67d31b0f3721616105356cbf9.setIcon(icon_993bf5087de696c2e956a342d3d1c397);
+            
+    
+            var poly_line_a61be51edba6ba315c26d22bf29d903a = L.polyline(
+                [[13.717516608116165, 100.46234337854995], [13.736717, 100.523186]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_dbe2f72afb61d607dcd534a529df244e = L.marker(
+                [13.628832495979488, 100.65702147107748],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_ae31d90f36890b52f728f6cb0edbe439 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db1060288d4e93812b3ba64f4c41b133 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25a4ed4b9376ebe278ec98e01a3f0a8a = $(`<div id="html_25a4ed4b9376ebe278ec98e01a3f0a8a" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 7775.0 tons<br>     DS: สมุทรปราการ<br>     CC-DS Dist: 7.01 km     </div>`)[0];
+                popup_db1060288d4e93812b3ba64f4c41b133.setContent(html_25a4ed4b9376ebe278ec98e01a3f0a8a);
+            
+        
+
+        marker_dbe2f72afb61d607dcd534a529df244e.bindPopup(popup_db1060288d4e93812b3ba64f4c41b133)
+        ;
+
+        
+    
+    
+                marker_dbe2f72afb61d607dcd534a529df244e.setIcon(icon_ae31d90f36890b52f728f6cb0edbe439);
+            
+    
+            var poly_line_95536782f450e317b2c3114c8de963fe = L.polyline(
+                [[13.628832495979488, 100.65702147107748], [13.599096, 100.599831]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_59dcf29bcfcdb242350b77a2d1ff4fa9 = L.marker(
+                [13.772284932399867, 100.58111094141374],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_72c0f1e8d76b27d1c57bc7e57b44bb89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_714bc67110feb96e3e9ebf14eb6738f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_522024292218ee9ff0aaea701b011257 = $(`<div id="html_522024292218ee9ff0aaea701b011257" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 9388.1 tons<br>     DS: กรุงเทพมหานคร<br>     CC-DS Dist: 7.4 km     </div>`)[0];
+                popup_714bc67110feb96e3e9ebf14eb6738f6.setContent(html_522024292218ee9ff0aaea701b011257);
+            
+        
+
+        marker_59dcf29bcfcdb242350b77a2d1ff4fa9.bindPopup(popup_714bc67110feb96e3e9ebf14eb6738f6)
+        ;
+
+        
+    
+    
+                marker_59dcf29bcfcdb242350b77a2d1ff4fa9.setIcon(icon_72c0f1e8d76b27d1c57bc7e57b44bb89);
+            
+    
+            var poly_line_09a0e922cd2312c59a4619a7bdd44263 = L.polyline(
+                [[13.772284932399867, 100.58111094141374], [13.736717, 100.523186]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_b72274a51388b2751bc829f3feedcd1f = L.marker(
+                [13.967572820113608, 100.53130294760909],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_389ddf70b4c51c8a3679caea938154fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_288e961cee291aab110a1ba3ce9ecf98 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d67cf0c19edfbb2a01f35dce75404bb = $(`<div id="html_9d67cf0c19edfbb2a01f35dce75404bb" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 10190.8 tons<br>     DS: ปทุมธานี<br>     CC-DS Dist: 5.97 km     </div>`)[0];
+                popup_288e961cee291aab110a1ba3ce9ecf98.setContent(html_9d67cf0c19edfbb2a01f35dce75404bb);
+            
+        
+
+        marker_b72274a51388b2751bc829f3feedcd1f.bindPopup(popup_288e961cee291aab110a1ba3ce9ecf98)
+        ;
+
+        
+    
+    
+                marker_b72274a51388b2751bc829f3feedcd1f.setIcon(icon_389ddf70b4c51c8a3679caea938154fa);
+            
+    
+            var poly_line_148a58fd7b00006c530caf07c63acd90 = L.polyline(
+                [[13.967572820113608, 100.53130294760909], [14.02092, 100.525124]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_6e09ac911c18832a58e9d0c5b2f023a8 = L.marker(
+                [13.949010592930984, 100.7641503628461],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_c2fd74922782567eaa9719e52d87410c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e649d2991520db9ac11a6db238be7cac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1aa43d82b9953efb035b25410df0bb0 = $(`<div id="html_d1aa43d82b9953efb035b25410df0bb0" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 5303.4 tons<br>     DS: ปทุมธานี<br>     CC-DS Dist: 27.0 km     </div>`)[0];
+                popup_e649d2991520db9ac11a6db238be7cac.setContent(html_d1aa43d82b9953efb035b25410df0bb0);
+            
+        
+
+        marker_6e09ac911c18832a58e9d0c5b2f023a8.bindPopup(popup_e649d2991520db9ac11a6db238be7cac)
+        ;
+
+        
+    
+    
+                marker_6e09ac911c18832a58e9d0c5b2f023a8.setIcon(icon_c2fd74922782567eaa9719e52d87410c);
+            
+    
+            var poly_line_77513d9f2e88329112ba662ceb2a338f = L.polyline(
+                [[13.949010592930984, 100.7641503628461], [14.02092, 100.525124]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_683da0cedf640defc84a0d569dcc0e57 = L.marker(
+                [14.626910086530025, 100.90309659904376],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_d0b1dd0d3b8301fa591a9047bcb03bca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be07972a1bddde7630b64fbf3fc323ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_104f97de8f9fe4482c36e8cb45593960 = $(`<div id="html_104f97de8f9fe4482c36e8cb45593960" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 4923.8 tons<br>     DS: สระบุรี<br>     CC-DS Dist: 10.92 km     </div>`)[0];
+                popup_be07972a1bddde7630b64fbf3fc323ee.setContent(html_104f97de8f9fe4482c36e8cb45593960);
+            
+        
+
+        marker_683da0cedf640defc84a0d569dcc0e57.bindPopup(popup_be07972a1bddde7630b64fbf3fc323ee)
+        ;
+
+        
+    
+    
+                marker_683da0cedf640defc84a0d569dcc0e57.setIcon(icon_d0b1dd0d3b8301fa591a9047bcb03bca);
+            
+    
+            var poly_line_7a0b8658616eadf81ba6169b9222e7fb = L.polyline(
+                [[14.626910086530025, 100.90309659904376], [14.528915, 100.910047]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_c834fccfe9e53dd815aacc337456332a = L.marker(
+                [14.622261747398433, 100.16794829555832],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_d4b922e5524421d6854418d0a4e82e78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05191b38f5e27f19fe008b71ce910494 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1017e058d6838a994c70cb2e4d2a9290 = $(`<div id="html_1017e058d6838a994c70cb2e4d2a9290" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 4484.1 tons<br>     DS: อ่างทอง<br>     CC-DS Dist: 31.15 km     </div>`)[0];
+                popup_05191b38f5e27f19fe008b71ce910494.setContent(html_1017e058d6838a994c70cb2e4d2a9290);
+            
+        
+
+        marker_c834fccfe9e53dd815aacc337456332a.bindPopup(popup_05191b38f5e27f19fe008b71ce910494)
+        ;
+
+        
+    
+    
+                marker_c834fccfe9e53dd815aacc337456332a.setIcon(icon_d4b922e5524421d6854418d0a4e82e78);
+            
+    
+            var poly_line_99be5d4c67a8b0d1d62d04451e021080 = L.polyline(
+                [[14.622261747398433, 100.16794829555832], [14.589605, 100.455498]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_29ca6888f6354b7da1f123fbaf51f0ff = L.marker(
+                [15.944954100874961, 100.93341368709382],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_971f0adcdd01fb83066ed8c3a8cc698f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a7f48ca09339a5986e57763e30050137 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46ba7ad9d27ad10a2910ac42268a7d6e = $(`<div id="html_46ba7ad9d27ad10a2910ac42268a7d6e" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 3297.8 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 120.68 km     </div>`)[0];
+                popup_a7f48ca09339a5986e57763e30050137.setContent(html_46ba7ad9d27ad10a2910ac42268a7d6e);
+            
+        
+
+        marker_29ca6888f6354b7da1f123fbaf51f0ff.bindPopup(popup_a7f48ca09339a5986e57763e30050137)
+        ;
+
+        
+    
+    
+                marker_29ca6888f6354b7da1f123fbaf51f0ff.setIcon(icon_971f0adcdd01fb83066ed8c3a8cc698f);
+            
+    
+            var poly_line_ff06fa4154f91c68572eebbeea67f65e = L.polyline(
+                [[15.944954100874961, 100.93341368709382], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_755e7d9b51da093f4e8dad0081fa999f = L.marker(
+                [15.52130910027133, 100.06071901777659],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_252a466032c074c9a706be1cb775a078 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_373f26939c3ca44b6d5fa61ecee6563a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9679dc08d89eb51cb7da090681291c78 = $(`<div id="html_9679dc08d89eb51cb7da090681291c78" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 4258.0 tons<br>     DS: ชัยนาท<br>     CC-DS Dist: 37.99 km     </div>`)[0];
+                popup_373f26939c3ca44b6d5fa61ecee6563a.setContent(html_9679dc08d89eb51cb7da090681291c78);
+            
+        
+
+        marker_755e7d9b51da093f4e8dad0081fa999f.bindPopup(popup_373f26939c3ca44b6d5fa61ecee6563a)
+        ;
+
+        
+    
+    
+                marker_755e7d9b51da093f4e8dad0081fa999f.setIcon(icon_252a466032c074c9a706be1cb775a078);
+            
+    
+            var poly_line_9c0a3be3c5b261ed083239e03d4a0789 = L.polyline(
+                [[15.52130910027133, 100.06071901777659], [15.18539, 100.125216]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_2ab89d272cd007152b3ef016cf6cbbf8 = L.marker(
+                [16.247488810517766, 99.64943460031877],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_f744c8191718a43ebe8967ec632b837e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e7589ad8ae767a81e7e39ba9aa9bfc4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fa308508f3dfaf2c22fab0137d6acff = $(`<div id="html_8fa308508f3dfaf2c22fab0137d6acff" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 2272.5 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 91.58 km     </div>`)[0];
+                popup_e7589ad8ae767a81e7e39ba9aa9bfc4e.setContent(html_8fa308508f3dfaf2c22fab0137d6acff);
+            
+        
+
+        marker_2ab89d272cd007152b3ef016cf6cbbf8.bindPopup(popup_e7589ad8ae767a81e7e39ba9aa9bfc4e)
+        ;
+
+        
+    
+    
+                marker_2ab89d272cd007152b3ef016cf6cbbf8.setIcon(icon_f744c8191718a43ebe8967ec632b837e);
+            
+    
+            var poly_line_b3a8817824959c41bdbe7ab5904ee813 = L.polyline(
+                [[16.247488810517766, 99.64943460031877], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_00fae67d57fd3efa7d1eed629cc617f8 = L.marker(
+                [16.886306920489613, 100.05376337695735],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_c77e3507d1b70a30916a1dd33b03ba70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f44450039bb1f9646cb99e73e2e43a88 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6348c281ac1be6e15331eeab5b91e14f = $(`<div id="html_6348c281ac1be6e15331eeab5b91e14f" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 4012.7 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 23.7 km     </div>`)[0];
+                popup_f44450039bb1f9646cb99e73e2e43a88.setContent(html_6348c281ac1be6e15331eeab5b91e14f);
+            
+        
+
+        marker_00fae67d57fd3efa7d1eed629cc617f8.bindPopup(popup_f44450039bb1f9646cb99e73e2e43a88)
+        ;
+
+        
+    
+    
+                marker_00fae67d57fd3efa7d1eed629cc617f8.setIcon(icon_c77e3507d1b70a30916a1dd33b03ba70);
+            
+    
+            var poly_line_ad85b87485ccd9b347efdcde775bcb68 = L.polyline(
+                [[16.886306920489613, 100.05376337695735], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_bbf48e8dacf0d5ea47095d75d7906b76 = L.marker(
+                [16.91359348641284, 100.93138875372809],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_2f6966503766abff50009cbe3caa8fd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4297fbefa1ea6a87ba90328c5bbbb143 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ddf5fb5414bda23fbdd6aa30f0873920 = $(`<div id="html_ddf5fb5414bda23fbdd6aa30f0873920" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 1554.3 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 71.56 km     </div>`)[0];
+                popup_4297fbefa1ea6a87ba90328c5bbbb143.setContent(html_ddf5fb5414bda23fbdd6aa30f0873920);
+            
+        
+
+        marker_bbf48e8dacf0d5ea47095d75d7906b76.bindPopup(popup_4297fbefa1ea6a87ba90328c5bbbb143)
+        ;
+
+        
+    
+    
+                marker_bbf48e8dacf0d5ea47095d75d7906b76.setIcon(icon_2f6966503766abff50009cbe3caa8fd0);
+            
+    
+            var poly_line_d99f92f60f265b3178d7c640a0c94f0f = L.polyline(
+                [[16.91359348641284, 100.93138875372809], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_fa91984bae8c4a6d91674d6e6e31ba2e = L.marker(
+                [13.697524278330397, 100.1921542996914],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_855d9837652cd735401317b30be56a0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce753038fa55350a0e36b11eece0fa94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3dc4755127b33c0d7e006f8f490a0237 = $(`<div id="html_3dc4755127b33c0d7e006f8f490a0237" style="width: 100.0%; height: 100.0%;">     📍 Central<br>     Waste: 6172.1 tons<br>     DS: สมุทรสาคร<br>     CC-DS Dist: 18.9 km     </div>`)[0];
+                popup_ce753038fa55350a0e36b11eece0fa94.setContent(html_3dc4755127b33c0d7e006f8f490a0237);
+            
+        
+
+        marker_fa91984bae8c4a6d91674d6e6e31ba2e.bindPopup(popup_ce753038fa55350a0e36b11eece0fa94)
+        ;
+
+        
+    
+    
+                marker_fa91984bae8c4a6d91674d6e6e31ba2e.setIcon(icon_855d9837652cd735401317b30be56a0b);
+            
+    
+            var poly_line_aebff577ab93895ae2575d192fc77aea = L.polyline(
+                [[13.697524278330397, 100.1921542996914], [13.547527, 100.274395]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_c21cd424737d68e2bc0faeb791987173 = L.marker(
+                [12.839156768812131, 101.08802465204614],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_0b6e1932ee7362d414d786abda346469 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_803ba7c40b2ca5c824b7f58679e34511 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3cd088c1e73d2c82e1b5721eb0391a8 = $(`<div id="html_f3cd088c1e73d2c82e1b5721eb0391a8" style="width: 100.0%; height: 100.0%;">     📍 East<br>     Waste: 6236.7 tons<br>     DS: ระยอง<br>     CC-DS Dist: 27.3 km     </div>`)[0];
+                popup_803ba7c40b2ca5c824b7f58679e34511.setContent(html_f3cd088c1e73d2c82e1b5721eb0391a8);
+            
+        
+
+        marker_c21cd424737d68e2bc0faeb791987173.bindPopup(popup_803ba7c40b2ca5c824b7f58679e34511)
+        ;
+
+        
+    
+    
+                marker_c21cd424737d68e2bc0faeb791987173.setIcon(icon_0b6e1932ee7362d414d786abda346469);
+            
+    
+            var poly_line_01c21ce38c45d1d51aad8284eb32eb83 = L.polyline(
+                [[12.839156768812131, 101.08802465204614], [12.682308, 101.281683]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_5cf75062eb5020cf45d940109c44cfab = L.marker(
+                [13.180480601201293, 101.01678735297381],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_aa05fd90b6064110aef1a221a570677e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73e2ee50ca88205a0b311cedfbb475fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d20f64e98dca183578edf01f4753803 = $(`<div id="html_7d20f64e98dca183578edf01f4753803" style="width: 100.0%; height: 100.0%;">     📍 East<br>     Waste: 4089.5 tons<br>     DS: ชลบุรี<br>     CC-DS Dist: 20.39 km     </div>`)[0];
+                popup_73e2ee50ca88205a0b311cedfbb475fa.setContent(html_7d20f64e98dca183578edf01f4753803);
+            
+        
+
+        marker_5cf75062eb5020cf45d940109c44cfab.bindPopup(popup_73e2ee50ca88205a0b311cedfbb475fa)
+        ;
+
+        
+    
+    
+                marker_5cf75062eb5020cf45d940109c44cfab.setIcon(icon_aa05fd90b6064110aef1a221a570677e);
+            
+    
+            var poly_line_892e56c7ff536e1906bc53138351c6d9 = L.polyline(
+                [[13.180480601201293, 101.01678735297381], [13.361143, 100.984673]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_ddcb0ea9123c4328b8238fefcbdc3e39 = L.marker(
+                [12.635580220369475, 102.14972046815468],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_71f2588672992c3b411f019dc31244e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8bd44edea752e5b8533b1bdb319ce7b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_462bd918b90618b0490a247e048a6bb6 = $(`<div id="html_462bd918b90618b0490a247e048a6bb6" style="width: 100.0%; height: 100.0%;">     📍 East<br>     Waste: 3185.1 tons<br>     DS: ระยอง<br>     CC-DS Dist: 94.32 km     </div>`)[0];
+                popup_a8bd44edea752e5b8533b1bdb319ce7b.setContent(html_462bd918b90618b0490a247e048a6bb6);
+            
+        
+
+        marker_ddcb0ea9123c4328b8238fefcbdc3e39.bindPopup(popup_a8bd44edea752e5b8533b1bdb319ce7b)
+        ;
+
+        
+    
+    
+                marker_ddcb0ea9123c4328b8238fefcbdc3e39.setIcon(icon_71f2588672992c3b411f019dc31244e2);
+            
+    
+            var poly_line_a4605efaaa71f11aba2c6206a7503e75 = L.polyline(
+                [[12.635580220369475, 102.14972046815468], [12.682308, 101.281683]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_b5c81425e0cc71d1607b53da48dac67e = L.marker(
+                [13.700572884196905, 101.21936204034719],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_705ca7038ff02f2cd6ce2b93221444ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4c3de77dcca2c7df35be07f64bcb6ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_617e9a8c1177ae881dd974489f7324ce = $(`<div id="html_617e9a8c1177ae881dd974489f7324ce" style="width: 100.0%; height: 100.0%;">     📍 East<br>     Waste: 4078.4 tons<br>     DS: ฉะเชิงเทรา<br>     CC-DS Dist: 15.32 km     </div>`)[0];
+                popup_c4c3de77dcca2c7df35be07f64bcb6ed.setContent(html_617e9a8c1177ae881dd974489f7324ce);
+            
+        
+
+        marker_b5c81425e0cc71d1607b53da48dac67e.bindPopup(popup_c4c3de77dcca2c7df35be07f64bcb6ed)
+        ;
+
+        
+    
+    
+                marker_b5c81425e0cc71d1607b53da48dac67e.setIcon(icon_705ca7038ff02f2cd6ce2b93221444ae);
+            
+    
+            var poly_line_cb332aed03683b28ebed73d460b3786e = L.polyline(
+                [[13.700572884196905, 101.21936204034719], [13.690419, 101.077957]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_d69b5c5fcc0f17fab1277f834655e8d7 = L.marker(
+                [13.792105603878719, 102.12535762205783],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_600a416c3d613b21388fec8f0e31f929 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4388695f3a43be1187f057da2195cc03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07c2772a00ed9e00f84762718959390d = $(`<div id="html_07c2772a00ed9e00f84762718959390d" style="width: 100.0%; height: 100.0%;">     📍 East<br>     Waste: 2301.7 tons<br>     DS: ปราจีนบุรี<br>     CC-DS Dist: 86.42 km     </div>`)[0];
+                popup_4388695f3a43be1187f057da2195cc03.setContent(html_07c2772a00ed9e00f84762718959390d);
+            
+        
+
+        marker_d69b5c5fcc0f17fab1277f834655e8d7.bindPopup(popup_4388695f3a43be1187f057da2195cc03)
+        ;
+
+        
+    
+    
+                marker_d69b5c5fcc0f17fab1277f834655e8d7.setIcon(icon_600a416c3d613b21388fec8f0e31f929);
+            
+    
+            var poly_line_c9c65cf0ff76210f3edfbabfb87aa27e = L.polyline(
+                [[13.792105603878719, 102.12535762205783], [14.050941, 101.370325]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_81f0b258eab65503f9f9d3f270614ac0 = L.marker(
+                [18.54403406254068, 98.19497045954976],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_f9ae3fc91c31d9b0e778fc80e07060e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbe6e731cf6b3a473d61315769829caa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ade000d8709cce87091fd1f91c95582 = $(`<div id="html_3ade000d8709cce87091fd1f91c95582" style="width: 100.0%; height: 100.0%;">     📍 North<br>     Waste: 1353.9 tons<br>     DS: ลำพูน<br>     CC-DS Dist: 85.84 km     </div>`)[0];
+                popup_bbe6e731cf6b3a473d61315769829caa.setContent(html_3ade000d8709cce87091fd1f91c95582);
+            
+        
+
+        marker_81f0b258eab65503f9f9d3f270614ac0.bindPopup(popup_bbe6e731cf6b3a473d61315769829caa)
+        ;
+
+        
+    
+    
+                marker_81f0b258eab65503f9f9d3f270614ac0.setIcon(icon_f9ae3fc91c31d9b0e778fc80e07060e7);
+            
+    
+            var poly_line_dbea0d99fe716fa1b3b98a044f5bea94 = L.polyline(
+                [[18.54403406254068, 98.19497045954976], [18.57418, 99.008722]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_bf17d6131cc6254d138f2f74ff4f3122 = L.marker(
+                [18.69339763795255, 99.0564299655126],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_bacfc94054a5c37721598203ee1a4f3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3dbe6b14e821a3997e155c841573a9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b29c6ed7731e56e97a051d32caacd71 = $(`<div id="html_5b29c6ed7731e56e97a051d32caacd71" style="width: 100.0%; height: 100.0%;">     📍 North<br>     Waste: 7717.6 tons<br>     DS: ลำพูน<br>     CC-DS Dist: 14.18 km     </div>`)[0];
+                popup_e3dbe6b14e821a3997e155c841573a9a.setContent(html_5b29c6ed7731e56e97a051d32caacd71);
+            
+        
+
+        marker_bf17d6131cc6254d138f2f74ff4f3122.bindPopup(popup_e3dbe6b14e821a3997e155c841573a9a)
+        ;
+
+        
+    
+    
+                marker_bf17d6131cc6254d138f2f74ff4f3122.setIcon(icon_bacfc94054a5c37721598203ee1a4f3f);
+            
+    
+            var poly_line_d2894454051026cbdcf160f417d628c4 = L.polyline(
+                [[18.69339763795255, 99.0564299655126], [18.57418, 99.008722]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_f8f7c2d6e1849382186c3597ff3e8345 = L.marker(
+                [17.864600349641883, 100.05891364725865],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_dd1b03dfb7fa02ac04b417c2c4163a09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b1809b1b0bc3efcc292b83f3e8b6726 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91eb9da6abcd14476851684e9a1b6954 = $(`<div id="html_91eb9da6abcd14476851684e9a1b6954" style="width: 100.0%; height: 100.0%;">     📍 North<br>     Waste: 3092.0 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 118.09 km     </div>`)[0];
+                popup_0b1809b1b0bc3efcc292b83f3e8b6726.setContent(html_91eb9da6abcd14476851684e9a1b6954);
+            
+        
+
+        marker_f8f7c2d6e1849382186c3597ff3e8345.bindPopup(popup_0b1809b1b0bc3efcc292b83f3e8b6726)
+        ;
+
+        
+    
+    
+                marker_f8f7c2d6e1849382186c3597ff3e8345.setIcon(icon_dd1b03dfb7fa02ac04b417c2c4163a09);
+            
+    
+            var poly_line_c72e4c2c58ba4a5dce0d1c5e49c621ef = L.polyline(
+                [[17.864600349641883, 100.05891364725865], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_a8d9f7eda0a1e55d071a453e4a73cdaa = L.marker(
+                [19.06651950760816, 100.34462211416691],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_d0f0dbaabca270564dd328544f8bc5e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9d9d8df18b11f04ee2ade8d7a187882 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2b17fcca7a1162dd4682126030c5c05 = $(`<div id="html_d2b17fcca7a1162dd4682126030c5c05" style="width: 100.0%; height: 100.0%;">     📍 North<br>     Waste: 2794.7 tons<br>     DS: ลำพูน<br>     CC-DS Dist: 150.88 km     </div>`)[0];
+                popup_d9d9d8df18b11f04ee2ade8d7a187882.setContent(html_d2b17fcca7a1162dd4682126030c5c05);
+            
+        
+
+        marker_a8d9f7eda0a1e55d071a453e4a73cdaa.bindPopup(popup_d9d9d8df18b11f04ee2ade8d7a187882)
+        ;
+
+        
+    
+    
+                marker_a8d9f7eda0a1e55d071a453e4a73cdaa.setIcon(icon_d0f0dbaabca270564dd328544f8bc5e2);
+            
+    
+            var poly_line_35d528553f0ca8047a183b661f55e761 = L.polyline(
+                [[19.06651950760816, 100.34462211416691], [18.57418, 99.008722]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_850b95adbbbd6b62d4135c45c1c547d8 = L.marker(
+                [19.899095008217124, 99.79964518519404],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_4a736220b281b9b128b426821872dc97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27611666b795341085bd7d266dc9186c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01d8fe2654ff7cf7850ebe39c62117b6 = $(`<div id="html_01d8fe2654ff7cf7850ebe39c62117b6" style="width: 100.0%; height: 100.0%;">     📍 North<br>     Waste: 4564.5 tons<br>     DS: ลำพูน<br>     CC-DS Dist: 169.11 km     </div>`)[0];
+                popup_27611666b795341085bd7d266dc9186c.setContent(html_01d8fe2654ff7cf7850ebe39c62117b6);
+            
+        
+
+        marker_850b95adbbbd6b62d4135c45c1c547d8.bindPopup(popup_27611666b795341085bd7d266dc9186c)
+        ;
+
+        
+    
+    
+                marker_850b95adbbbd6b62d4135c45c1c547d8.setIcon(icon_4a736220b281b9b128b426821872dc97);
+            
+    
+            var poly_line_682b471faf3f8bada71ad41d9f4a4e5a = L.polyline(
+                [[19.899095008217124, 99.79964518519404], [18.57418, 99.008722]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_71314e41f330f1a75dafdb0c8da2a25a = L.marker(
+                [15.070795948313945, 101.9407839193675],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_9249eb4e36f9b35b045f552e55ef36a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f049e8b0c3d916a23418c5b7e0663b29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72d551c298bcb8d8f805ac151a1732b7 = $(`<div id="html_72d551c298bcb8d8f805ac151a1732b7" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 8097.4 tons<br>     DS: นครราชสีมา<br>     CC-DS Dist: 19.66 km     </div>`)[0];
+                popup_f049e8b0c3d916a23418c5b7e0663b29.setContent(html_72d551c298bcb8d8f805ac151a1732b7);
+            
+        
+
+        marker_71314e41f330f1a75dafdb0c8da2a25a.bindPopup(popup_f049e8b0c3d916a23418c5b7e0663b29)
+        ;
+
+        
+    
+    
+                marker_71314e41f330f1a75dafdb0c8da2a25a.setIcon(icon_9249eb4e36f9b35b045f552e55ef36a5);
+            
+    
+            var poly_line_d2ba68a78fe39290b4883db302d8df21 = L.polyline(
+                [[15.070795948313945, 101.9407839193675], [14.9799, 102.097771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_6a1951476a9a4422a39683b9422cc18f = L.marker(
+                [16.227385618019856, 102.5346854582999],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_32bb74f8219969fff7a7f77377b0a24d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8df3f9b30fdcbbd1d0f6f25685441f76 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21243caaf52ccb2ac58b595f80a556ad = $(`<div id="html_21243caaf52ccb2ac58b595f80a556ad" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 7369.0 tons<br>     DS: นครราชสีมา<br>     CC-DS Dist: 146.39 km     </div>`)[0];
+                popup_8df3f9b30fdcbbd1d0f6f25685441f76.setContent(html_21243caaf52ccb2ac58b595f80a556ad);
+            
+        
+
+        marker_6a1951476a9a4422a39683b9422cc18f.bindPopup(popup_8df3f9b30fdcbbd1d0f6f25685441f76)
+        ;
+
+        
+    
+    
+                marker_6a1951476a9a4422a39683b9422cc18f.setIcon(icon_32bb74f8219969fff7a7f77377b0a24d);
+            
+    
+            var poly_line_5a1383f50f8c0509b6ca2518290ec6e7 = L.polyline(
+                [[16.227385618019856, 102.5346854582999], [14.9799, 102.097771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_e7cc04922297aea0c7994f027d36e00c = L.marker(
+                [14.961225406739885, 103.2728147073577],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_7cb5b094ac18b16a8449962da54fd7ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e7dfc91912ac44f0ee0ac637ffd01c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_926f14b9ff554c293d4a968d6f2ad06a = $(`<div id="html_926f14b9ff554c293d4a968d6f2ad06a" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 6939.4 tons<br>     DS: นครราชสีมา<br>     CC-DS Dist: 126.24 km     </div>`)[0];
+                popup_9e7dfc91912ac44f0ee0ac637ffd01c7.setContent(html_926f14b9ff554c293d4a968d6f2ad06a);
+            
+        
+
+        marker_e7cc04922297aea0c7994f027d36e00c.bindPopup(popup_9e7dfc91912ac44f0ee0ac637ffd01c7)
+        ;
+
+        
+    
+    
+                marker_e7cc04922297aea0c7994f027d36e00c.setIcon(icon_7cb5b094ac18b16a8449962da54fd7ac);
+            
+    
+            var poly_line_8ecdb49316775ad55532c9885150d261 = L.polyline(
+                [[14.961225406739885, 103.2728147073577], [14.9799, 102.097771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_a96d883f871dcd8e62a273cb3619dd66 = L.marker(
+                [15.165810000183521, 104.7381364866833],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_7234f1cdbc4a854d36923be7807633de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a500ff5487e42f794bab2309795563dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6878f9cf67a5a693e27c051f17b7df3e = $(`<div id="html_6878f9cf67a5a693e27c051f17b7df3e" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 8295.3 tons<br>     DS: นครราชสีมา<br>     CC-DS Dist: 284.25 km     </div>`)[0];
+                popup_a500ff5487e42f794bab2309795563dd.setContent(html_6878f9cf67a5a693e27c051f17b7df3e);
+            
+        
+
+        marker_a96d883f871dcd8e62a273cb3619dd66.bindPopup(popup_a500ff5487e42f794bab2309795563dd)
+        ;
+
+        
+    
+    
+                marker_a96d883f871dcd8e62a273cb3619dd66.setIcon(icon_7234f1cdbc4a854d36923be7807633de);
+            
+    
+            var poly_line_e7480b3dc73f043ecc7b231950bf0a8a = L.polyline(
+                [[15.165810000183521, 104.7381364866833], [14.9799, 102.097771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_23db14b91f6fdf15f016f3c4c77e5e78 = L.marker(
+                [16.19062629597315, 103.85233316269671],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_14fbe3b9534404b3066daa241710a229 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3ad0e8cb4106d1b2251ac03e4b6e39f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b25f5812ad249f682f6b27141677339 = $(`<div id="html_9b25f5812ad249f682f6b27141677339" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 7546.6 tons<br>     DS: นครราชสีมา<br>     CC-DS Dist: 231.17 km     </div>`)[0];
+                popup_f3ad0e8cb4106d1b2251ac03e4b6e39f.setContent(html_9b25f5812ad249f682f6b27141677339);
+            
+        
+
+        marker_23db14b91f6fdf15f016f3c4c77e5e78.bindPopup(popup_f3ad0e8cb4106d1b2251ac03e4b6e39f)
+        ;
+
+        
+    
+    
+                marker_23db14b91f6fdf15f016f3c4c77e5e78.setIcon(icon_14fbe3b9534404b3066daa241710a229);
+            
+    
+            var poly_line_34b4931e6140845a6ea970e688f04397 = L.polyline(
+                [[16.19062629597315, 103.85233316269671], [14.9799, 102.097771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_33c14d7daef30c173f27e06876591bcd = L.marker(
+                [17.495412735727438, 104.02413958500544],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_17cb481be528a31c515e318bb5a11d07 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cb38d84b5cfd6db97bee6f0bd02a133 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ab1dacd530bd782e6cc5ed6d3d614b0 = $(`<div id="html_3ab1dacd530bd782e6cc5ed6d3d614b0" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 6006.8 tons<br>     DS: นครราชสีมา<br>     CC-DS Dist: 347.17 km     </div>`)[0];
+                popup_2cb38d84b5cfd6db97bee6f0bd02a133.setContent(html_3ab1dacd530bd782e6cc5ed6d3d614b0);
+            
+        
+
+        marker_33c14d7daef30c173f27e06876591bcd.bindPopup(popup_2cb38d84b5cfd6db97bee6f0bd02a133)
+        ;
+
+        
+    
+    
+                marker_33c14d7daef30c173f27e06876591bcd.setIcon(icon_17cb481be528a31c515e318bb5a11d07);
+            
+    
+            var poly_line_1787790eb45e16b4a932b3c733f8f788 = L.polyline(
+                [[17.495412735727438, 104.02413958500544], [14.9799, 102.097771]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_45d30d4d50290e0836eaa3e629b66ec2 = L.marker(
+                [17.427861033058797, 102.5167601847064],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_fcb78223d9f72f578fa58972ef29c9a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3165d787740b72254e9d54a158f9e4d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8699ffb6fbb507436d23eb143a07ad54 = $(`<div id="html_8699ffb6fbb507436d23eb143a07ad54" style="width: 100.0%; height: 100.0%;">     📍 North-East<br>     Waste: 8009.2 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 248.52 km     </div>`)[0];
+                popup_a3165d787740b72254e9d54a158f9e4d.setContent(html_8699ffb6fbb507436d23eb143a07ad54);
+            
+        
+
+        marker_45d30d4d50290e0836eaa3e629b66ec2.bindPopup(popup_a3165d787740b72254e9d54a158f9e4d)
+        ;
+
+        
+    
+    
+                marker_45d30d4d50290e0836eaa3e629b66ec2.setIcon(icon_fcb78223d9f72f578fa58972ef29c9a2);
+            
+    
+            var poly_line_6cd698bc2df81081de34c46f55df0232 = L.polyline(
+                [[17.427861033058797, 102.5167601847064], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_bd0adf4bfa8a9e225316466b6ad1dde6 = L.marker(
+                [7.979220288628766, 99.78423312840648],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_0cb5200825f75305b1ab1fcce7dd338f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56fbb30a766c34cd6bf2a64c21aa7cbf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3858b0cf9ff71fccbf0394957f2aa15 = $(`<div id="html_e3858b0cf9ff71fccbf0394957f2aa15" style="width: 100.0%; height: 100.0%;">     📍 South<br>     Waste: 6444.4 tons<br>     DS: สงขลา<br>     CC-DS Dist: 125.33 km     </div>`)[0];
+                popup_56fbb30a766c34cd6bf2a64c21aa7cbf.setContent(html_e3858b0cf9ff71fccbf0394957f2aa15);
+            
+        
+
+        marker_bd0adf4bfa8a9e225316466b6ad1dde6.bindPopup(popup_56fbb30a766c34cd6bf2a64c21aa7cbf)
+        ;
+
+        
+    
+    
+                marker_bd0adf4bfa8a9e225316466b6ad1dde6.setIcon(icon_0cb5200825f75305b1ab1fcce7dd338f);
+            
+    
+            var poly_line_73d7ca488c75701e398c3e1bf6a7979b = L.polyline(
+                [[7.979220288628766, 99.78423312840648], [7.189727, 100.595732]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_7acad42f98d5be4b8fb004cce7823699 = L.marker(
+                [9.029881766835745, 99.43896784453625],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_c129eee043cb2dce32a35e4e796d12cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0fd2053f810c219c280332c34be9b59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_54b67eed78d1e58f3a821f1ae8c1c51f = $(`<div id="html_54b67eed78d1e58f3a821f1ae8c1c51f" style="width: 100.0%; height: 100.0%;">     📍 South<br>     Waste: 4799.8 tons<br>     DS: สงขลา<br>     CC-DS Dist: 241.0 km     </div>`)[0];
+                popup_e0fd2053f810c219c280332c34be9b59.setContent(html_54b67eed78d1e58f3a821f1ae8c1c51f);
+            
+        
+
+        marker_7acad42f98d5be4b8fb004cce7823699.bindPopup(popup_e0fd2053f810c219c280332c34be9b59)
+        ;
+
+        
+    
+    
+                marker_7acad42f98d5be4b8fb004cce7823699.setIcon(icon_c129eee043cb2dce32a35e4e796d12cc);
+            
+    
+            var poly_line_3be25934a0e05e870d1afa2f5cda725d = L.polyline(
+                [[9.029881766835745, 99.43896784453625], [7.189727, 100.595732]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_2cc97b5343927423e69cce3b3a2e2c3f = L.marker(
+                [8.077336436288457, 98.49345781925517],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_8cb897d055d40306cbcda667095f5d3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2189ca88b998b3c1fd8d75657e6b239e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dad9debeeb429e900284603994d642c1 = $(`<div id="html_dad9debeeb429e900284603994d642c1" style="width: 100.0%; height: 100.0%;">     📍 South<br>     Waste: 3907.5 tons<br>     DS: สงขลา<br>     CC-DS Dist: 251.83 km     </div>`)[0];
+                popup_2189ca88b998b3c1fd8d75657e6b239e.setContent(html_dad9debeeb429e900284603994d642c1);
+            
+        
+
+        marker_2cc97b5343927423e69cce3b3a2e2c3f.bindPopup(popup_2189ca88b998b3c1fd8d75657e6b239e)
+        ;
+
+        
+    
+    
+                marker_2cc97b5343927423e69cce3b3a2e2c3f.setIcon(icon_8cb897d055d40306cbcda667095f5d3f);
+            
+    
+            var poly_line_f585dfa56083d21c7a24f13abf758bf1 = L.polyline(
+                [[8.077336436288457, 98.49345781925517], [7.189727, 100.595732]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_2f979ddb55e107d7269820e81acfc404 = L.marker(
+                [10.279836147528018, 99.0096086807956],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_12f3e35994ffd08e5ff1483ae45ad6da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2049010152e162bb3b33f3a53864397 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_652a309e0da73dda90192d57ab0b85b2 = $(`<div id="html_652a309e0da73dda90192d57ab0b85b2" style="width: 100.0%; height: 100.0%;">     📍 South<br>     Waste: 2502.0 tons<br>     DS: เพชรบุรี<br>     CC-DS Dist: 330.69 km     </div>`)[0];
+                popup_e2049010152e162bb3b33f3a53864397.setContent(html_652a309e0da73dda90192d57ab0b85b2);
+            
+        
+
+        marker_2f979ddb55e107d7269820e81acfc404.bindPopup(popup_e2049010152e162bb3b33f3a53864397)
+        ;
+
+        
+    
+    
+                marker_2f979ddb55e107d7269820e81acfc404.setIcon(icon_12f3e35994ffd08e5ff1483ae45ad6da);
+            
+    
+            var poly_line_0483e3cd1d78aa7aeabb1d71fc96fbb6 = L.polyline(
+                [[10.279836147528018, 99.0096086807956], [13.11116, 99.939133]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_1ba7e1464ca897d3e9763ed70e588c6d = L.marker(
+                [6.989974929932989, 100.32980005627486],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_17841de9803f44a47f26ea703bc501ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea3f15a9ffe5ed6071563bdcd094dec8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47f22be5da2d65bb21c50b1791ee0376 = $(`<div id="html_47f22be5da2d65bb21c50b1791ee0376" style="width: 100.0%; height: 100.0%;">     📍 South<br>     Waste: 5192.5 tons<br>     DS: สงขลา<br>     CC-DS Dist: 36.8 km     </div>`)[0];
+                popup_ea3f15a9ffe5ed6071563bdcd094dec8.setContent(html_47f22be5da2d65bb21c50b1791ee0376);
+            
+        
+
+        marker_1ba7e1464ca897d3e9763ed70e588c6d.bindPopup(popup_ea3f15a9ffe5ed6071563bdcd094dec8)
+        ;
+
+        
+    
+    
+                marker_1ba7e1464ca897d3e9763ed70e588c6d.setIcon(icon_17841de9803f44a47f26ea703bc501ae);
+            
+    
+            var poly_line_b03ac3a52ae1ff32a53d0ba211e59732 = L.polyline(
+                [[6.989974929932989, 100.32980005627486], [7.189727, 100.595732]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_93df26fff4d7bb15e2dbf10e394101bc = L.marker(
+                [6.463109953065608, 101.4368988945651],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_2b3c94ae1b7460e829105dbf5fe528a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce8ef9a0b5d721d947d82a7893b998f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e235935496891c138d31ac9ab0d5e4e = $(`<div id="html_5e235935496891c138d31ac9ab0d5e4e" style="width: 100.0%; height: 100.0%;">     📍 South<br>     Waste: 4523.9 tons<br>     DS: สงขลา<br>     CC-DS Dist: 123.1 km     </div>`)[0];
+                popup_ce8ef9a0b5d721d947d82a7893b998f8.setContent(html_5e235935496891c138d31ac9ab0d5e4e);
+            
+        
+
+        marker_93df26fff4d7bb15e2dbf10e394101bc.bindPopup(popup_ce8ef9a0b5d721d947d82a7893b998f8)
+        ;
+
+        
+    
+    
+                marker_93df26fff4d7bb15e2dbf10e394101bc.setIcon(icon_2b3c94ae1b7460e829105dbf5fe528a5);
+            
+    
+            var poly_line_6a23fbd35c54244596d98c12d13c0d8c = L.polyline(
+                [[6.463109953065608, 101.4368988945651], [7.189727, 100.595732]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_49dc8d66c3fd0f5584f312b01943a006 = L.marker(
+                [16.844149454909132, 98.71346809017474],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_154204b3ee8ba964fab4f4c237803086 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de4fb75344b7fc541086ee5332b20047 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d871b2ca98d5b26349e3d9a5f79a59ca = $(`<div id="html_d871b2ca98d5b26349e3d9a5f79a59ca" style="width: 100.0%; height: 100.0%;">     📍 West<br>     Waste: 1612.9 tons<br>     DS: พิษณุโลก<br>     CC-DS Dist: 165.24 km     </div>`)[0];
+                popup_de4fb75344b7fc541086ee5332b20047.setContent(html_d871b2ca98d5b26349e3d9a5f79a59ca);
+            
+        
+
+        marker_49dc8d66c3fd0f5584f312b01943a006.bindPopup(popup_de4fb75344b7fc541086ee5332b20047)
+        ;
+
+        
+    
+    
+                marker_49dc8d66c3fd0f5584f312b01943a006.setIcon(icon_154204b3ee8ba964fab4f4c237803086);
+            
+    
+            var poly_line_647a004a004249a52c3243f7906eb694 = L.polyline(
+                [[16.844149454909132, 98.71346809017474], [16.821145, 100.265851]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_54a0ad3bee1261d8be722c93353fe5b1 = L.marker(
+                [13.520970790589425, 99.81490017267377],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_b5679e3a1cc75fcd348dfd9c78b1ce26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82078547697055629f51d220d92ce7bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba04cc94865875df37388ba583c9949d = $(`<div id="html_ba04cc94865875df37388ba583c9949d" style="width: 100.0%; height: 100.0%;">     📍 West<br>     Waste: 4375.3 tons<br>     DS: สมุทรสงคราม<br>     CC-DS Dist: 23.52 km     </div>`)[0];
+                popup_82078547697055629f51d220d92ce7bf.setContent(html_ba04cc94865875df37388ba583c9949d);
+            
+        
+
+        marker_54a0ad3bee1261d8be722c93353fe5b1.bindPopup(popup_82078547697055629f51d220d92ce7bf)
+        ;
+
+        
+    
+    
+                marker_54a0ad3bee1261d8be722c93353fe5b1.setIcon(icon_b5679e3a1cc75fcd348dfd9c78b1ce26);
+            
+    
+            var poly_line_fbbedc42f141a637cc5a7e368d92b7c7 = L.polyline(
+                [[13.520970790589425, 99.81490017267377], [13.414374, 100.002777]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_8783437d446957b6f14b02491771b017 = L.marker(
+                [14.452081674429795, 99.21154780370185],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_58cf1e9b29ef793d85e5b9909b78ef77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8023e29e15e00a194fbc7d0d75793dc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35af946d1b968b1a1892ef4def8db9c2 = $(`<div id="html_35af946d1b968b1a1892ef4def8db9c2" style="width: 100.0%; height: 100.0%;">     📍 West<br>     Waste: 1749.4 tons<br>     DS: กาญจนบุรี<br>     CC-DS Dist: 58.97 km     </div>`)[0];
+                popup_8023e29e15e00a194fbc7d0d75793dc2.setContent(html_35af946d1b968b1a1892ef4def8db9c2);
+            
+        
+
+        marker_8783437d446957b6f14b02491771b017.bindPopup(popup_8023e29e15e00a194fbc7d0d75793dc2)
+        ;
+
+        
+    
+    
+                marker_8783437d446957b6f14b02491771b017.setIcon(icon_58cf1e9b29ef793d85e5b9909b78ef77);
+            
+    
+            var poly_line_255a5d37f2d0254200c492b577b70327 = L.polyline(
+                [[14.452081674429795, 99.21154780370185], [14.022779, 99.532811]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_caad1a770a5346809b1e6593328addcb = L.marker(
+                [12.202751135378392, 99.82551883902634],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_981b4956fa5ff6fe7d4329a0e726d93c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "recycle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bd20674700d2258aeac19f25434e225 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_383cdf8c007147b4083b76efbb966415 = $(`<div id="html_383cdf8c007147b4083b76efbb966415" style="width: 100.0%; height: 100.0%;">     📍 West<br>     Waste: 2469.0 tons<br>     DS: เพชรบุรี<br>     CC-DS Dist: 101.76 km     </div>`)[0];
+                popup_3bd20674700d2258aeac19f25434e225.setContent(html_383cdf8c007147b4083b76efbb966415);
+            
+        
+
+        marker_caad1a770a5346809b1e6593328addcb.bindPopup(popup_3bd20674700d2258aeac19f25434e225)
+        ;
+
+        
+    
+    
+                marker_caad1a770a5346809b1e6593328addcb.setIcon(icon_981b4956fa5ff6fe7d4329a0e726d93c);
+            
+    
+            var poly_line_4b6fd86587b6c44a2c2579734541303d = L.polyline(
+                [[12.202751135378392, 99.82551883902634], [13.11116, 99.939133]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var marker_da18a39ebac89f4d204f4c4d59424182 = L.marker(
+                [13.736717, 100.523186],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_592f7e7cff182eecc38fa41bceb416c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82b4b83abfd4ef7e44b0155ff6573bc8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8abb1641363186709f14618916868247 = $(`<div id="html_8abb1641363186709f14618916868247" style="width: 100.0%; height: 100.0%;">🔧 กรุงเทพมหานคร</div>`)[0];
+                popup_82b4b83abfd4ef7e44b0155ff6573bc8.setContent(html_8abb1641363186709f14618916868247);
+            
+        
+
+        marker_da18a39ebac89f4d204f4c4d59424182.bindPopup(popup_82b4b83abfd4ef7e44b0155ff6573bc8)
+        ;
+
+        
+    
+    
+                marker_da18a39ebac89f4d204f4c4d59424182.setIcon(icon_592f7e7cff182eecc38fa41bceb416c3);
+            
+    
+            var marker_90a6686585180bb6b9defb7bf6d9384b = L.marker(
+                [13.599096, 100.599831],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_bcd1bd2175bbbfc0349c8f689a247e42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00b8821a67b75a28361f00cfa87637d1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c3408f3114b4c064a9b6f8515699a1d0 = $(`<div id="html_c3408f3114b4c064a9b6f8515699a1d0" style="width: 100.0%; height: 100.0%;">🔧 สมุทรปราการ</div>`)[0];
+                popup_00b8821a67b75a28361f00cfa87637d1.setContent(html_c3408f3114b4c064a9b6f8515699a1d0);
+            
+        
+
+        marker_90a6686585180bb6b9defb7bf6d9384b.bindPopup(popup_00b8821a67b75a28361f00cfa87637d1)
+        ;
+
+        
+    
+    
+                marker_90a6686585180bb6b9defb7bf6d9384b.setIcon(icon_bcd1bd2175bbbfc0349c8f689a247e42);
+            
+    
+            var marker_6b9b01b475f75fa3a0aebe1cde504088 = L.marker(
+                [13.859108, 100.521652],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_8a464725a2dd8d1aa8785efc6df1176a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb3d6c94532d8a1dc2cdb0e3dd5907a9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dbf5b518d8eb6928cfdd9b3baa45193b = $(`<div id="html_dbf5b518d8eb6928cfdd9b3baa45193b" style="width: 100.0%; height: 100.0%;">🔧 นนทบุรี</div>`)[0];
+                popup_bb3d6c94532d8a1dc2cdb0e3dd5907a9.setContent(html_dbf5b518d8eb6928cfdd9b3baa45193b);
+            
+        
+
+        marker_6b9b01b475f75fa3a0aebe1cde504088.bindPopup(popup_bb3d6c94532d8a1dc2cdb0e3dd5907a9)
+        ;
+
+        
+    
+    
+                marker_6b9b01b475f75fa3a0aebe1cde504088.setIcon(icon_8a464725a2dd8d1aa8785efc6df1176a);
+            
+    
+            var marker_b64bca0cc044c304824575b23cacf180 = L.marker(
+                [14.02092, 100.525124],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_0f34fd16afe0967634e6cdc1871868ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c0d566a2da2e251a367a47329577b29 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3dc804ccf2f4c5742444e022bbf22561 = $(`<div id="html_3dc804ccf2f4c5742444e022bbf22561" style="width: 100.0%; height: 100.0%;">🔧 ปทุมธานี</div>`)[0];
+                popup_9c0d566a2da2e251a367a47329577b29.setContent(html_3dc804ccf2f4c5742444e022bbf22561);
+            
+        
+
+        marker_b64bca0cc044c304824575b23cacf180.bindPopup(popup_9c0d566a2da2e251a367a47329577b29)
+        ;
+
+        
+    
+    
+                marker_b64bca0cc044c304824575b23cacf180.setIcon(icon_0f34fd16afe0967634e6cdc1871868ec);
+            
+    
+            var marker_3b3c6491bbdfe1ae2afb06e32e60486a = L.marker(
+                [14.353212, 100.568959],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_d9453305d493a27dc91caef73f199b01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_033cf4acad7982dc9b5c6a7ba926ee49 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6319029c54409490b8c3762afee1bead = $(`<div id="html_6319029c54409490b8c3762afee1bead" style="width: 100.0%; height: 100.0%;">🔧 พระนครศรีอยุธยา</div>`)[0];
+                popup_033cf4acad7982dc9b5c6a7ba926ee49.setContent(html_6319029c54409490b8c3762afee1bead);
+            
+        
+
+        marker_3b3c6491bbdfe1ae2afb06e32e60486a.bindPopup(popup_033cf4acad7982dc9b5c6a7ba926ee49)
+        ;
+
+        
+    
+    
+                marker_3b3c6491bbdfe1ae2afb06e32e60486a.setIcon(icon_d9453305d493a27dc91caef73f199b01);
+            
+    
+            var marker_86afa04d651fcd7aa64af1b7fd8de41b = L.marker(
+                [14.589605, 100.455498],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_bc318ad2887caa091c8daaa1b6332de1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ee9a2c1aaf8c1af1d2f57162867055f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ba4b79ae82266ad39dac1f7e6a21a4a7 = $(`<div id="html_ba4b79ae82266ad39dac1f7e6a21a4a7" style="width: 100.0%; height: 100.0%;">🔧 อ่างทอง</div>`)[0];
+                popup_9ee9a2c1aaf8c1af1d2f57162867055f.setContent(html_ba4b79ae82266ad39dac1f7e6a21a4a7);
+            
+        
+
+        marker_86afa04d651fcd7aa64af1b7fd8de41b.bindPopup(popup_9ee9a2c1aaf8c1af1d2f57162867055f)
+        ;
+
+        
+    
+    
+                marker_86afa04d651fcd7aa64af1b7fd8de41b.setIcon(icon_bc318ad2887caa091c8daaa1b6332de1);
+            
+    
+            var marker_18af8875beeaef601e68549a55c61266 = L.marker(
+                [14.799508, 100.65337],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_1bae111f0633b41c8d75bd471db91d46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f77d69b19499a1b6ce0f56af7854f63 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eedf7f369f6aa37c57f8c4ed776182aa = $(`<div id="html_eedf7f369f6aa37c57f8c4ed776182aa" style="width: 100.0%; height: 100.0%;">🔧 ลพบุรี</div>`)[0];
+                popup_2f77d69b19499a1b6ce0f56af7854f63.setContent(html_eedf7f369f6aa37c57f8c4ed776182aa);
+            
+        
+
+        marker_18af8875beeaef601e68549a55c61266.bindPopup(popup_2f77d69b19499a1b6ce0f56af7854f63)
+        ;
+
+        
+    
+    
+                marker_18af8875beeaef601e68549a55c61266.setIcon(icon_1bae111f0633b41c8d75bd471db91d46);
+            
+    
+            var marker_c399e1939198d4c3050385c96d2ba72f = L.marker(
+                [15.18539, 100.125216],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_b5f2b3cbbeb4665191bb09ee4094ad54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b207bd33601922d206e35fd7615e0a9c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_64054a2b2cb43ca72519ca360cc20072 = $(`<div id="html_64054a2b2cb43ca72519ca360cc20072" style="width: 100.0%; height: 100.0%;">🔧 ชัยนาท</div>`)[0];
+                popup_b207bd33601922d206e35fd7615e0a9c.setContent(html_64054a2b2cb43ca72519ca360cc20072);
+            
+        
+
+        marker_c399e1939198d4c3050385c96d2ba72f.bindPopup(popup_b207bd33601922d206e35fd7615e0a9c)
+        ;
+
+        
+    
+    
+                marker_c399e1939198d4c3050385c96d2ba72f.setIcon(icon_b5f2b3cbbeb4665191bb09ee4094ad54);
+            
+    
+            var marker_c2b7bdbe4584f61b4584cfc32776a45e = L.marker(
+                [14.528915, 100.910047],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_9ce450be9564c82e4cb18334d5bbe9d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7097072822598e9b96237ef2f2f84be = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4bfd52b00236b89fa05b5acb08753a13 = $(`<div id="html_4bfd52b00236b89fa05b5acb08753a13" style="width: 100.0%; height: 100.0%;">🔧 สระบุรี</div>`)[0];
+                popup_f7097072822598e9b96237ef2f2f84be.setContent(html_4bfd52b00236b89fa05b5acb08753a13);
+            
+        
+
+        marker_c2b7bdbe4584f61b4584cfc32776a45e.bindPopup(popup_f7097072822598e9b96237ef2f2f84be)
+        ;
+
+        
+    
+    
+                marker_c2b7bdbe4584f61b4584cfc32776a45e.setIcon(icon_9ce450be9564c82e4cb18334d5bbe9d7);
+            
+    
+            var marker_2e5be9a9bf292a725281b9d9d469652c = L.marker(
+                [13.361143, 100.984673],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_ddc4931678076779abb7cf452e313f43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d91818f01e9a090b877b5041b3b10dbc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dd6a7824622aa36910f2c00caa7a95d8 = $(`<div id="html_dd6a7824622aa36910f2c00caa7a95d8" style="width: 100.0%; height: 100.0%;">🔧 ชลบุรี</div>`)[0];
+                popup_d91818f01e9a090b877b5041b3b10dbc.setContent(html_dd6a7824622aa36910f2c00caa7a95d8);
+            
+        
+
+        marker_2e5be9a9bf292a725281b9d9d469652c.bindPopup(popup_d91818f01e9a090b877b5041b3b10dbc)
+        ;
+
+        
+    
+    
+                marker_2e5be9a9bf292a725281b9d9d469652c.setIcon(icon_ddc4931678076779abb7cf452e313f43);
+            
+    
+            var marker_73af4047525b710675540ffb82e22661 = L.marker(
+                [12.682308, 101.281683],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_9a1499caebac82c1ace0582e8d9cf804 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_834e012316b725496684448ca9f4147a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e70759f5f78614f71218bd3914b83c3c = $(`<div id="html_e70759f5f78614f71218bd3914b83c3c" style="width: 100.0%; height: 100.0%;">🔧 ระยอง</div>`)[0];
+                popup_834e012316b725496684448ca9f4147a.setContent(html_e70759f5f78614f71218bd3914b83c3c);
+            
+        
+
+        marker_73af4047525b710675540ffb82e22661.bindPopup(popup_834e012316b725496684448ca9f4147a)
+        ;
+
+        
+    
+    
+                marker_73af4047525b710675540ffb82e22661.setIcon(icon_9a1499caebac82c1ace0582e8d9cf804);
+            
+    
+            var marker_0d0fd95d2fc834b008e308ce47701751 = L.marker(
+                [13.690419, 101.077957],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_e2ccc723ebb66129283bea33ceb1b854 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0d8a38b0fef1cfaec3c80f17994555a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d1fbd1ede0a15bd1eb3823f602c66414 = $(`<div id="html_d1fbd1ede0a15bd1eb3823f602c66414" style="width: 100.0%; height: 100.0%;">🔧 ฉะเชิงเทรา</div>`)[0];
+                popup_c0d8a38b0fef1cfaec3c80f17994555a.setContent(html_d1fbd1ede0a15bd1eb3823f602c66414);
+            
+        
+
+        marker_0d0fd95d2fc834b008e308ce47701751.bindPopup(popup_c0d8a38b0fef1cfaec3c80f17994555a)
+        ;
+
+        
+    
+    
+                marker_0d0fd95d2fc834b008e308ce47701751.setIcon(icon_e2ccc723ebb66129283bea33ceb1b854);
+            
+    
+            var marker_cfbd86ec877b54ba1d79d0dd9f624cbc = L.marker(
+                [14.050941, 101.370325],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_c4272be82e05ebd23767041b0ea6c973 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e1b34b08d5d6cfbf31f431c965028e4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1acf198cbbc5b0a43d8e6f30da3801cc = $(`<div id="html_1acf198cbbc5b0a43d8e6f30da3801cc" style="width: 100.0%; height: 100.0%;">🔧 ปราจีนบุรี</div>`)[0];
+                popup_3e1b34b08d5d6cfbf31f431c965028e4.setContent(html_1acf198cbbc5b0a43d8e6f30da3801cc);
+            
+        
+
+        marker_cfbd86ec877b54ba1d79d0dd9f624cbc.bindPopup(popup_3e1b34b08d5d6cfbf31f431c965028e4)
+        ;
+
+        
+    
+    
+                marker_cfbd86ec877b54ba1d79d0dd9f624cbc.setIcon(icon_c4272be82e05ebd23767041b0ea6c973);
+            
+    
+            var marker_0a7ab78f458bd8b363f2df1bcf4cc4b8 = L.marker(
+                [14.9799, 102.097771],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_8e41db558b8e3f35cbb3ff722fee303a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5d6ef7021831c5f9e7723eb862d1519 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_69e415f6a65161ad4f0b5936457700a5 = $(`<div id="html_69e415f6a65161ad4f0b5936457700a5" style="width: 100.0%; height: 100.0%;">🔧 นครราชสีมา</div>`)[0];
+                popup_e5d6ef7021831c5f9e7723eb862d1519.setContent(html_69e415f6a65161ad4f0b5936457700a5);
+            
+        
+
+        marker_0a7ab78f458bd8b363f2df1bcf4cc4b8.bindPopup(popup_e5d6ef7021831c5f9e7723eb862d1519)
+        ;
+
+        
+    
+    
+                marker_0a7ab78f458bd8b363f2df1bcf4cc4b8.setIcon(icon_8e41db558b8e3f35cbb3ff722fee303a);
+            
+    
+            var marker_43ba92bb4ba47378e9ceeee2557e925b = L.marker(
+                [18.57418, 99.008722],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_c58794e33ad1095c88f4cb57ce69e109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6fc9d71343b4c37d585452651c3828d5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_efd97a9a34e526ffe1f35a245cc68a7d = $(`<div id="html_efd97a9a34e526ffe1f35a245cc68a7d" style="width: 100.0%; height: 100.0%;">🔧 ลำพูน</div>`)[0];
+                popup_6fc9d71343b4c37d585452651c3828d5.setContent(html_efd97a9a34e526ffe1f35a245cc68a7d);
+            
+        
+
+        marker_43ba92bb4ba47378e9ceeee2557e925b.bindPopup(popup_6fc9d71343b4c37d585452651c3828d5)
+        ;
+
+        
+    
+    
+                marker_43ba92bb4ba47378e9ceeee2557e925b.setIcon(icon_c58794e33ad1095c88f4cb57ce69e109);
+            
+    
+            var marker_79416b3aead7233051b0f8d35b201d49 = L.marker(
+                [14.022779, 99.532811],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_7595b42b4ceb2518cccafb18dac9bdef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e23d13bc7e89ae6974c7a3cf81ee05b2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_90a72fee75972da92d5dbfea9cd8bfeb = $(`<div id="html_90a72fee75972da92d5dbfea9cd8bfeb" style="width: 100.0%; height: 100.0%;">🔧 กาญจนบุรี</div>`)[0];
+                popup_e23d13bc7e89ae6974c7a3cf81ee05b2.setContent(html_90a72fee75972da92d5dbfea9cd8bfeb);
+            
+        
+
+        marker_79416b3aead7233051b0f8d35b201d49.bindPopup(popup_e23d13bc7e89ae6974c7a3cf81ee05b2)
+        ;
+
+        
+    
+    
+                marker_79416b3aead7233051b0f8d35b201d49.setIcon(icon_7595b42b4ceb2518cccafb18dac9bdef);
+            
+    
+            var marker_db4fbf7787ecaec21cd1b8f46a9a0972 = L.marker(
+                [13.814029, 100.037292],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_a71a7167388dc35a60b48193630a0891 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c013c5885fbdee0bcb1d1df7cb9b7d6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_754951eee37d72ead538c25e291f1a2c = $(`<div id="html_754951eee37d72ead538c25e291f1a2c" style="width: 100.0%; height: 100.0%;">🔧 นครปฐม</div>`)[0];
+                popup_2c013c5885fbdee0bcb1d1df7cb9b7d6.setContent(html_754951eee37d72ead538c25e291f1a2c);
+            
+        
+
+        marker_db4fbf7787ecaec21cd1b8f46a9a0972.bindPopup(popup_2c013c5885fbdee0bcb1d1df7cb9b7d6)
+        ;
+
+        
+    
+    
+                marker_db4fbf7787ecaec21cd1b8f46a9a0972.setIcon(icon_a71a7167388dc35a60b48193630a0891);
+            
+    
+            var marker_6fec306dde90e50bd3fa50d523c766c3 = L.marker(
+                [13.547527, 100.274395],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_832ad13e9de3f34c052c767ed1c3570d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4dbb8fcdcc3d6c77a7c844f63d0a124 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_09a73871ce9b97ab2edfdbda6a96d606 = $(`<div id="html_09a73871ce9b97ab2edfdbda6a96d606" style="width: 100.0%; height: 100.0%;">🔧 สมุทรสาคร</div>`)[0];
+                popup_f4dbb8fcdcc3d6c77a7c844f63d0a124.setContent(html_09a73871ce9b97ab2edfdbda6a96d606);
+            
+        
+
+        marker_6fec306dde90e50bd3fa50d523c766c3.bindPopup(popup_f4dbb8fcdcc3d6c77a7c844f63d0a124)
+        ;
+
+        
+    
+    
+                marker_6fec306dde90e50bd3fa50d523c766c3.setIcon(icon_832ad13e9de3f34c052c767ed1c3570d);
+            
+    
+            var marker_2eb3f8e9fd5802201db5e9d13caa361e = L.marker(
+                [13.414374, 100.002777],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_115d8873d754147d9047cb8f259a1637 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf0b0a8acb4c361203de3d671ff778f3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2308a6700c8b1441c4321a730ac52e23 = $(`<div id="html_2308a6700c8b1441c4321a730ac52e23" style="width: 100.0%; height: 100.0%;">🔧 สมุทรสงคราม</div>`)[0];
+                popup_bf0b0a8acb4c361203de3d671ff778f3.setContent(html_2308a6700c8b1441c4321a730ac52e23);
+            
+        
+
+        marker_2eb3f8e9fd5802201db5e9d13caa361e.bindPopup(popup_bf0b0a8acb4c361203de3d671ff778f3)
+        ;
+
+        
+    
+    
+                marker_2eb3f8e9fd5802201db5e9d13caa361e.setIcon(icon_115d8873d754147d9047cb8f259a1637);
+            
+    
+            var marker_a16a978eba66327eba8ad409f4abb18e = L.marker(
+                [13.11116, 99.939133],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_2cb8e61e920778c07b2a22fec729b569 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53c9496d0bbbec1e46c954e6b796cdfb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f342408297ae74d6bd43e84acddec30b = $(`<div id="html_f342408297ae74d6bd43e84acddec30b" style="width: 100.0%; height: 100.0%;">🔧 เพชรบุรี</div>`)[0];
+                popup_53c9496d0bbbec1e46c954e6b796cdfb.setContent(html_f342408297ae74d6bd43e84acddec30b);
+            
+        
+
+        marker_a16a978eba66327eba8ad409f4abb18e.bindPopup(popup_53c9496d0bbbec1e46c954e6b796cdfb)
+        ;
+
+        
+    
+    
+                marker_a16a978eba66327eba8ad409f4abb18e.setIcon(icon_2cb8e61e920778c07b2a22fec729b569);
+            
+    
+            var marker_675154503129feec0fd9a673feed0781 = L.marker(
+                [7.189727, 100.595732],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_0d7b39f6840bd75cba2fb83ed61595df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1b517e948d3f22cbf23aab9acd8783fd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0876dde69b1573f68683be56a61bccd6 = $(`<div id="html_0876dde69b1573f68683be56a61bccd6" style="width: 100.0%; height: 100.0%;">🔧 สงขลา</div>`)[0];
+                popup_1b517e948d3f22cbf23aab9acd8783fd.setContent(html_0876dde69b1573f68683be56a61bccd6);
+            
+        
+
+        marker_675154503129feec0fd9a673feed0781.bindPopup(popup_1b517e948d3f22cbf23aab9acd8783fd)
+        ;
+
+        
+    
+    
+                marker_675154503129feec0fd9a673feed0781.setIcon(icon_0d7b39f6840bd75cba2fb83ed61595df);
+            
+    
+            var marker_5951be3dacba8a75e257fdfa2eef6090 = L.marker(
+                [16.821145, 100.265851],
+                {
+}
+            ).addTo(map_33e47032a07a1a1dba998d640efd97e6);
+        
+    
+            var icon_5208b8a67f533add61abded4613fbfa4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "wrench",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45aebc54631c121c8b8c719c1887cae1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_502d26aa37e34df801160f2375ff7436 = $(`<div id="html_502d26aa37e34df801160f2375ff7436" style="width: 100.0%; height: 100.0%;">🔧 พิษณุโลก</div>`)[0];
+                popup_45aebc54631c121c8b8c719c1887cae1.setContent(html_502d26aa37e34df801160f2375ff7436);
+            
+        
+
+        marker_5951be3dacba8a75e257fdfa2eef6090.bindPopup(popup_45aebc54631c121c8b8c719c1887cae1)
+        ;
+
+        
+    
+    
+                marker_5951be3dacba8a75e257fdfa2eef6090.setIcon(icon_5208b8a67f533add61abded4613fbfa4);
+            
+</script>
+</html>
